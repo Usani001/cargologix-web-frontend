@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: rgb(255 255 255);
+  max-width: 1920px;
+}
+
+.activeInput:focus {
+  border-bottom: 2px solid #333333;
+  /* Change the color to your desired active color */
+}
+
+.otp {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  width: 100%;
+  align-items: center;
+}
+
+.inputStyle {
+  width: 50% !important;
+  height: 45px;
+  border-bottom-width: 3px;
+  margin-left: 8px;
+  margin-right: 8px;
+  background: transparent;
+  font-size: 26px;
+  border-style: solid;
+  border-color: #000000;
+  outline: none;
+  font-weight: 900;
+  line-height: 16px;
+  letter-spacing: 0.5p;
+}
+
+@layer components {
+  input:checked {
+    & ::after {
+      content: '\2713';
+      /* Unicode checkmark character */
+      color: #fff;
+      /* White color for the checkmark */
+      position: absolute;
+      left: 1px;
+      top: -5px;
+      font-weight: 800;
+      /* Adjust the position of the checkmark */
+      font-size: 1rem;
+      /* Adjust the font size as needed */
+
+    }
+  }
+}
