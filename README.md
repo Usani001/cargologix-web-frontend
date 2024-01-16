@@ -1,2 +1,2 @@
 # cargologix-web-frontend
-Web fronend of Cargologix
+Web frontend of Cargologix... Cargologix is a Cargo Logistics WebApp
